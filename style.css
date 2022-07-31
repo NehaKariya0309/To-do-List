@@ -1,0 +1,78 @@
+*{
+    margin:0; padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    background: linear-gradient(139deg,rgb(148, 49, 148) , rgb(216, 124, 140));
+}
+.container{
+    /* border:2px solid white; */
+    width:450px;
+    position:absolute;
+    transform: translate(-50%,-50%); /*/for */
+    top:50%;                        /*  //centering */
+    left:50%;
+    padding:40px;
+
+}
+#newtask{
+    display:flex;
+    background-color: white;
+    padding:30px 20px;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px 2px rgb(139, 125, 125);
+    border-radius: 3px;
+
+}
+#task{
+    /* padding:10px 20px; */
+    height:30px;
+    width:80%;
+    border:1px solid grey;
+    border-radius: 3px;
+}
+#add{
+    width:15%;
+    height:30px;
+    border-radius: 3px;
+    color: white;
+    border:none;
+    /* padding:10px 20px; */
+    background-color:rgb(177, 80, 177) ;
+    cursor: pointer;
+} 
+#list{
+    background-color: white;padding:30px 20px;
+    margin-top:40px;
+    box-shadow: 0px 2px 4px 2px rgb(139, 125, 125);
+    border-radius: 3px;
+    
+}
+.item{
+    background-color: white;
+    height:40px;
+    font-size:20px;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid grey;
+    margin-top: 10px;
+}
+.taskname{
+    width:70%;
+    
+}
+.delete{
+    background-color: rgb(177, 80, 177);
+    width:10%;
+    color:white;
+    border:none;
+    height:100%;
+    border-radius: 3px;
+    cursor:pointer;
+
+}
+.completed{
+    text-decoration: line-through;
+}
